@@ -18,7 +18,7 @@
 
 **Importante:** Esta é uma aplicação frontend que consome uma API. O projeto backend (construído em NestJS) precisa de estar em execução para que esta aplicação funcione.
 
-➡️ **Repositório do Backend:** [Link para o seu repositório da API NestJS](https://github.com/gacneto/task-manage-app-backend)
+➡️ **Repositório do Backend:** [Link para o repositório da API NestJS](https://github.com/gacneto/task-manager-app-backend.git)
 
 ---
 
