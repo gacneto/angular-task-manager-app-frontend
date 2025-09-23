@@ -109,3 +109,13 @@ Siga os passos abaixo para configurar e executar o projeto no seu ambiente local
 <img width="1346" height="631" alt="Screenshot 2025-09-23 093129" src="https://github.com/user-attachments/assets/81c519da-df48-4e6e-8805-3e869b95fa21" />
 <img width="1337" height="636" alt="Screenshot 2025-09-23 093145" src="https://github.com/user-attachments/assets/77a611d0-b821-4301-a4d2-658765e12c51" />
 <img width="1349" height="631" alt="Screenshot 2025-09-23 093236" src="https://github.com/user-attachments/assets/f086debd-dae9-4210-bcf1-d5c29f410da0" />
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+<div align="center">
+  Feito por [Lucas Barcelar](https://github.com/gacneto)
+</div>
