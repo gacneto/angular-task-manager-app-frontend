@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #3f51b5;      /* Azul índigo - para botões e destaques */
+  --primary-color-dark: #303f9f; /* Tom mais escuro para hover */
+  --accent-color: #ff4081;       /* Rosa - para acentos ou ações secundárias */
+  --background-color: #f4f7fa;   /* Cinza muito claro para o fundo da página */
+  --surface-color: #ffffff;      /* Branco para a superfície de cartões */
+  --text-color: #212121;         /* Preto suave para texto principal */
+  --text-secondary-color: #757575;/* Cinza para texto secundário */
+  --danger-color: #f44336;       /* Vermelho para ações de perigo (delete) */
+  --danger-color-dark: #d32f2f;
+  --success-color: #4caf50;      /* Verde para sucesso */
+  --border-color: #e0e0e0;       /* Cinza claro para bordas */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+  background-color: var(--background-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}

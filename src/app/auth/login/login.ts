@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Auth } from '../../services/auth';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './login.html',
   styleUrl: './login.scss'
 })
@@ -30,8 +30,6 @@ export class Login {
 
     this.auth.login(this.loginForm.value).subscribe({
       next: (response) => {
-        console.log('Login bem-sucedido!', response);
-
         localStorage.setItem('accessToken', response.accessToken);
 
         this.router.navigate(['/dashboard']);

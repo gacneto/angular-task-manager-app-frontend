@@ -1,0 +1,29 @@
+<div class="login-container"> <div class="login-card"> <h2>Crie a sua Conta</h2>
+    <p>Preencha os campos para se registar.</p>
+
+    <form class="login-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input id="name" type="text" formControlName="name" placeholder="O seu nome completo">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" formControlName="email" placeholder="seuemail@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input id="password" type="password" formControlName="password" placeholder="Mínimo de 6 caracteres">
+      </div>
+
+      <button type="submit" class="login-button" [disabled]="registerForm.invalid">
+        Registar
+      </button>
+    </form>
+
+    <p class="redirect-link">
+      Já tem uma conta? <a routerLink="/login">Faça login</a>
+    </p>
+  </div>
+</div>

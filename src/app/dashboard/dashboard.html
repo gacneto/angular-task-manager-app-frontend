@@ -1,10 +1,12 @@
 <div class="dashboard-container">
   <header class="dashboard-header">
     <h1>Meu Dashboard de Tarefas</h1>
-    <button (click)="toggleNewTaskForm()" class="action-button">
-      {{ showNewTaskForm ? 'Cancelar' : 'Nova Tarefa' }}
-    </button>
-    <button (click)="logout()" class="logout-button">Sair</button>
+    <div class="header-actions">
+      <button (click)="toggleNewTaskForm()" class="header-button action-button">
+        {{ showNewTaskForm ? 'Cancelar' : 'Nova Tarefa' }}
+      </button>
+      <button (click)="logout()" class="header-button logout-button">Sair</button>
+    </div>
   </header>
 
   <section *ngIf="showNewTaskForm" class="new-task-form-container">
@@ -28,11 +30,23 @@
       <div *ngIf="tasks.length === 0" class="no-tasks">
         <p>Você ainda não tem nenhuma tarefa cadastrada. Que tal criar a primeira?</p>
       </div>
-
+      
       <div *ngFor="let task of tasks" class="task-card">
+        <button (click)="deleteTask(task.id)" class="delete-button">X</button>
         <h3>{{ task.title }}</h3>
         <p>{{ task.description }}</p>
-        <span class="task-status">{{ task.status }}</span>
+        <div class="status-selector">
+          <label for="status-{{task.id}}">Status:</label>
+          <select 
+            id="status-{{task.id}}"
+            class="status-select"
+            [value]="task.status" 
+            (change)="updateTaskStatus(task.id, $event)">
+            <option value="ABERTA">Aberta</option>
+            <option value="EM_ANDAMENTO">Em Andamento</option>
+            <option value="CONCLUIDA">Concluída</option>
+          </select>
+        </div>
       </div>
     </section>
   </main>

@@ -1,59 +1,108 @@
-# TaskManageAppFrontend
+<div align="center">
+  <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="250" alt="Angular Logo">
+  <h1>Task Manager - Frontend</h1>
+  <p>
+    <strong>Interface de utilizador moderna e reativa para a Task API, construída com Angular.</strong>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+    <img src="https://img.shields.io/badge/Angular-v17+-red?logo=angular" alt="Angular Version">
+    <img src="https://img.shields.io/badge/TypeScript-5+-blue?logo=typescript" alt="TypeScript Version">
+    <img src="https://img.shields.io/badge/SCSS-Styled-pink?logo=sass" alt="SCSS">
+  </p>
+</div>
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+---
 
-## Development server
+## 🔗 Repositório do Backend
 
-To start a local development server, run:
+**Importante:** Esta é uma aplicação frontend que consome uma API. O projeto backend (construído em NestJS) precisa de estar em execução para que esta aplicação funcione.
 
-```bash
-ng serve
-```
+➡️ **Repositório do Backend:** [Link para o seu repositório da API NestJS](https://github.com/gacneto/task-manage-app-backend)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 📑 Índice
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [✨ Features](#-features)
+- [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+- [🚀 Como Rodar a Aplicação](#-como-rodar-a-aplicação)
+- [📸 Screenshots (Sugestão)](#-screenshots-sugestão)
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📖 Sobre o Projeto
 
-```bash
-ng generate --help
-```
+Este projeto é a interface de utilizador (UI) para a **Task API**. Ele oferece uma experiência de utilizador fluida e reativa para o registo, autenticação e gestão de tarefas. A aplicação foi construída utilizando as mais recentes práticas do Angular, incluindo componentes **standalone**, **Reactive Forms** e um fluxo de autenticação seguro baseado em **JWT**.
 
-## Building
+O design é limpo, profissional e responsivo, adaptando-se a diferentes tamanhos de ecrã, desde telemóveis a monitores de desktop.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## ✨ Features
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- ✅ **Fluxo de Autenticação Completo**: Páginas e lógica para **Registo** e **Login** de utilizadores.
+- 🔐 **Gestão de Token JWT**: O token de acesso é guardado no `localStorage` após o login.
+- 🚀 **Interceptor HTTP**: Anexa automaticamente o token JWT a todas as requisições para endpoints protegidos da API.
+- 🛡️ **Rotas Protegidas**: Utilização de Guardas de Rota (`CanActivate`) para proteger o dashboard, impedindo o acesso de utilizadores não autenticados.
+- 🗂️ **CRUD de Tarefas Completo**:
+    - **C**reate: Formulário para criar novas tarefas.
+    - **R**ead: Visualização da lista de tarefas do utilizador.
+    - **U**pdate: Funcionalidade para alterar o status da tarefa.
+    - **D**elete: Funcionalidade para apagar tarefas.
+- 📝 **Formulários Reativos**: Uso de `ReactiveFormsModule` para formulários robustos com validação em tempo real.
+- 📱 **Design Responsivo**: Layout que se adapta a desktops, tablets e telemóveis.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-ng test
-```
+- **Angular (v17+)**: Framework principal para a construção da interface.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **SCSS**: Pré-processador de CSS para estilos mais organizados e poderosos.
+- **RxJS**: Biblioteca para programação reativa, usada extensivamente no Angular, especialmente para lidar com chamadas HTTP.
+- **Angular CLI**: Ferramenta de linha de comando para gerir o projeto.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🚀 Como Rodar a Aplicação
 
-```bash
-ng e2e
-```
+Siga os passos abaixo para configurar e executar o projeto no seu ambiente local.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### **Pré-requisitos**
 
-## Additional Resources
+- [Git](https://git-scm.com)
+- [Node.js (v18 ou superior)](https://nodejs.org/en/)
+- **A API do Backend (NestJS) deve estar em execução** em `http://localhost:3000`.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### **Passo a Passo**
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone <https://github.com/gacneto/task-manager-app-frontend.git>
+    cd task-manage-app-frontend
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+3.  **Execute a aplicação:**
+    ```bash
+    ng serve
+    ```
+    A aplicação estará disponível em `http://localhost:4200/`. Ela irá conectar-se automaticamente à API que está a ser executada em `http://localhost:3000`.
+
+---
+
+## 📸 Screenshots (Sugestão)
+
+Para tornar o seu README ainda mais profissional, adicione screenshots da sua aplicação em funcionamento!
+
+*(Aqui você pode colocar uma imagem da sua tela de login)*
+**Tela de Login**
+
+*(E aqui uma imagem do seu dashboard com algumas tarefas)*
+**Dashboard de Tarefas**
