@@ -28,7 +28,7 @@
 - [✨ Features](#-features)
 - [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
 - [🚀 Como Rodar a Aplicação](#-como-rodar-a-aplicação)
-- [📸 Screenshots (Sugestão)](#-screenshots-sugestão)
+- [📸 Screenshots](#-screenshots)
 
 ---
 
@@ -97,12 +97,15 @@ Siga os passos abaixo para configurar e executar o projeto no seu ambiente local
 
 ---
 
-## 📸 Screenshots (Sugestão)
+## 📸 Screenshots 
 
-Para tornar o seu README ainda mais profissional, adicione screenshots da sua aplicação em funcionamento!
-
-*(Aqui você pode colocar uma imagem da sua tela de login)*
 **Tela de Login**
+<img width="1347" height="638" alt="Screenshot 2025-09-23 093017" src="https://github.com/user-attachments/assets/8eff148e-432d-4578-a2e2-d9c29735bd1a" />
 
-*(E aqui uma imagem do seu dashboard com algumas tarefas)*
+**Tela de Registro**
+<img width="1337" height="637" alt="Screenshot 2025-09-23 093113" src="https://github.com/user-attachments/assets/dc318369-95ca-4566-bc0e-2fb4251c88ba" />
+
 **Dashboard de Tarefas**
+<img width="1346" height="631" alt="Screenshot 2025-09-23 093129" src="https://github.com/user-attachments/assets/81c519da-df48-4e6e-8805-3e869b95fa21" />
+<img width="1337" height="636" alt="Screenshot 2025-09-23 093145" src="https://github.com/user-attachments/assets/77a611d0-b821-4301-a4d2-658765e12c51" />
+<img width="1349" height="631" alt="Screenshot 2025-09-23 093236" src="https://github.com/user-attachments/assets/f086debd-dae9-4210-bcf1-d5c29f410da0" />
