@@ -18,7 +18,7 @@
 
 **Importante:** Esta é uma aplicação frontend que consome uma API. O projeto backend (construído em NestJS) precisa de estar em execução para que esta aplicação funcione.
 
-➡️ **Repositório do Backend:** [Link para o repositório da API NestJS](https://github.com/gacneto/task-manager-app-backend.git)
+➡️ **Repositório do Backend:** [Link para o repositório da API NestJS](https://github.com/gacneto/angular-task-manager-app-backend.git)
 
 ---
 
@@ -80,8 +80,8 @@ Siga os passos abaixo para configurar e executar o projeto no seu ambiente local
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <https://github.com/gacneto/task-manager-app-frontend.git>
-    cd task-manage-app-frontend
+    git clone <https://github.com/gacneto/angular-task-manager-app-frontend.git>
+    cd angular-task-manage-app-frontend
     ```
 
 2.  **Instale as dependências:**
